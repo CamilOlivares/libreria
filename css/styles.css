@@ -1,0 +1,95 @@
+/* Encabezado */
+header {
+    background: #003366; /* Azul oscuro */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Barra de navegación */
+  nav {
+    background: linear-gradient(135deg, #1e90ff, #d1d8da); /* Gradiente azul */
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra inicial para efecto flotante */
+    font-size: 1.1em;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Enlaces de navegación */
+  .navbar-brand, .nav-link {
+    color: #ffffff !important; /* Blanco */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover del enlace del menú */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #00ff00 !important; /* Verde para hover */
+    background: rgba(255, 255, 255, 0.2); /* Fondo en hover opcional */
+  }
+  
+  /* Menú desplegable */
+  .navbar-collapse {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+  }
+  
+  /* Elementos del menú */
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  /* Estilo del enlace del menú */
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto flotante 3D */
+  .navbar {
+    transform: perspective(1000px) translateZ(0); /* Posicionamiento base */
+    transition: box-shadow 0.3s ease; /* Transición de sombra */
+  }
+  
+  .navbar:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para efecto flotante */
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  .navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .btn-modern {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #e74c3c; /* Rojo */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-modern:hover {
+    background: #c0392b; /* Rojo más oscuro */
+    transform: translateY(-3px); /* Elevación al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada en hover */
+  }
+  
+  .btn-modern:active {
+    transform: translateY(1px); /* Efecto de presión */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al presionar */
+  }
+  

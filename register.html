@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el tipo de documento como HTML5 y el idioma del contenido como español -->
+<head>
+  <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la ventana gráfica para asegurar que el 
+  sitio se vea bien en todos los dispositivos -->
+  <title>Registro de Usuario</title> <!-- Define el título de la página -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a los estilos 
+  de Bootstrap desde un CDN -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo de estilos personalizado styles.css -->
+</head>
+
+<body>
+  <div class="container"> <!-- Contenedor principal de Bootstrap -->
+    <h2 class="text-center my-4">Registro de Usuario</h2> <!-- Encabezado de la página centrado con margen superior e inferior -->
+    
+    <form action="php/register_user.php" method="post"> <!-- Formulario de registro de usuario con método POST -->
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+        <input type="text" id="nombre" name="nombre" class="form-control" required> <!-- Campo de entrada de texto para el nombre 
+        con validación requerida -->
+      </div>
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <label for="email">Email:</label> <!-- Etiqueta para el campo de email -->
+        <input type="email" id="email" name="email" class="form-control" required> <!-- Campo de entrada de email con validación 
+        requerida -->
+      </div>
+
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <label for="contraseña">Contraseña:</label> <!-- Etiqueta para el campo de contraseña -->
+        <input type="password" id="contraseña" name="contraseña" class="form-control" required> <!-- Campo de entrada de contraseña 
+        con validación requerida -->
+      </div>
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <label for="dirección">Dirección:</label> <!-- Etiqueta para el campo de dirección -->
+        <input type="text" id="dirección" name="dirección" class="form-control" required> <!-- Campo de entrada de texto para 
+        la dirección con validación requerida -->
+      </div>
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <label for="teléfono">Teléfono:</label> <!-- Etiqueta para el campo de teléfono -->
+        <input type="text" id="teléfono" name="teléfono" class="form-control" required> <!-- Campo de entrada de texto para el 
+        teléfono con validación requerida -->
+      </div>
+      <div class="form-group"> <!-- Grupo de formulario de Bootstrap -->
+        <button type="submit" class="btn btn-primary btn-block">Registrar</button> <!-- Botón de envío del formulario con clases de 
+        Bootstrap -->
+      </div>
+    </form>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Enlace al archivo de jQuery desde un CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> <!-- Enlace al archivo de Popper.js 
+  desde un CDN -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Enlace al archivo de JavaScript 
+  de Bootstrap desde un CDN -->
+</body>
+</html>

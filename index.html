@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define el tipo de documento como HTML5 y el idioma del contenido como inglés -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la ventana gráfica para 
+    asegurar que el sitio se vea bien en todos los dispositivos -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Asegura que el documento se renderice con la última versión de 
+    IE disponible -->
+    <title>Carrito</title> <!-- Define el título de la página -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Enlace al archivo de estilos normalize.css para estandarizar estilos 
+    entre navegadores -->
+    <link rel="stylesheet" href="css/skeleton.css"> <!-- Enlace al archivo de estilos skeleton.css, un framework CSS ligero -->
+    <link rel="stylesheet" href="css/custom.css"> <!-- Enlace al archivo de estilos custom.css para estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo de estilos styles.css para estilos adicionales -->
+</head>
+
+<body>
+    <section class="section-menu-p d-flex"> <!-- Sección para el menú principal con clases para estilos -->
+        <div class="col-2 menu-principal"> <!-- Div para el menú principal ocupando 2 columnas -->
+            <nav class="navegacion"> <!-- Navegación principal -->
+                <a href="register.html" class="btn-modern">Registro</a> <!-- Enlace a la página de registro con una clase de 
+                botón moderno -->
+                <a href="login.html" class="btn-modern">Iniciar Sesión</a> <!-- Enlace a la página de inicio de sesión con una 
+                clase de botón moderno -->
+            </nav>
+        </div>
+    </section>
+
+    <header id="header" class="header"> <!-- Cabecera de la página con ID y clase -->
+        <div class="container"> <!-- Contenedor principal -->
+            <div class="row"> <!-- Fila para la disposición de elementos -->
+                <div class="four columns"> <!-- Div que ocupa 4 columnas para el logo -->
+                    <img src="img/logo.png" id="logo"> <!-- Imagen del logo con ID -->
+                </div>
+                <div class="two columns u-pull-right"> <!-- Div que ocupa 2 columnas y se alinea a la derecha -->
+                    <ul>
+                        <li class="submenu"> <!-- Elemento de lista con clase de submenú -->
+                            <img src="img/cart.png" id="img-carrito"> <!-- Imagen del carrito de compras con ID -->
+                            <div id="carrito"> <!-- Div del carrito de compras con ID -->
+                                <table id="lista-carrito" class="u-full-width"> <!-- Tabla para mostrar la lista del carrito, 
+                                    ocupa todo el ancho disponible -->
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th> <!-- Encabezado de columna para la imagen -->
+                                            <th>Nombre</th> <!-- Encabezado de columna para el nombre -->
+                                            <th>Precio</th> <!-- Encabezado de columna para el precio -->
+                                            <th></th> <!-- Encabezado de columna vacío para acciones -->
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody> <!-- Cuerpo de la tabla vacío inicialmente -->
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a> <!-- Enlace para 
+                                vaciar el carrito, ocupa todo el ancho disponible -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="hero"> <!-- Div para el contenido hero de la página -->
+        <div class="container"> <!-- Contenedor principal -->
+            <div class="row"> <!-- Fila para la disposición de elementos -->
+                <div class="six columns"> <!-- Div que ocupa 6 columnas -->
+                    <div class="contenido-hero"> <!-- Div para el contenido del hero -->
+                        <h2>Entretente con algo nuevo</h2> <!-- Título -->
+                        <p>Todos los libros a $15</p> <!-- Subtítulo -->
+                        <form action="#" id="busqueda" method="post" class="formulario"> <!-- Formulario de búsqueda con método POST -->
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Leer?" id="buscador"> 
+                            <!-- Campo de entrada de texto para la búsqueda, ocupa todo el ancho disponible -->
+                            <input type="submit" id="submit-buscador" class="submit-buscador"> <!-- Botón de envío del formulario -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="barra"> <!-- Div para la barra informativa -->
+        <div class="container"> <!-- Contenedor principal -->
+            <div class="row"> <!-- Fila para la disposición de elementos -->
+                <div class="four columns icono icono1"> <!-- Div que ocupa 4 columnas con clases para íconos -->
+                    <p>20,000 Los Mejores libros del Momento <br> Explora los temas más recientes</p> <!-- Texto informativo -->
+                </div>
+                <div class="four columns icono icono2"> <!-- Div que ocupa 4 columnas con clases para íconos -->
+                    <p>Revisa nuestros precios<br> Diviertete Aprendiendo</p> <!-- Texto informativo -->
+                </div>
+                <div class="four columns icono icono3"> <!-- Div que ocupa 4 columnas con clases para íconos -->
+                    <p>Date de Alta<br> y obten las ultima novedades</p> <!-- Texto informativo -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-libros" class="container"> <!-- Div para la lista de libros con ID y clase -->
+        <h1 id="encabezado" class="encabezado">Libros En Línea</h1> <!-- Encabezado principal de la sección -->
+        <div class="row"> <!-- Fila para la disposición de elementos -->
+            <div class="four columns"> <!-- Div que ocupa 4 columnas -->
+                <div class="card"> <!-- Div para una tarjeta de libro -->
+                    <img src="img/part1.jpeg" class="imagen-libro u-full-width"> <!-- Imagen del libro, ocupa todo el 
+                    ancho disponible -->
+                    <div class="info-card"> <!-- Div para la información del libro -->
+                        <h4> Juegos del Hambre</h4> <!-- Título del libro -->
+                        <p>Suzanne Collins</p> <!-- Autor del libro -->
+                        <img src="img/estrellas.png"> <!-- Imagen de estrellas para la calificación -->
+                        <p class="precio">$20.000 <span class="u-pull-right ">$15.000</span></p> <!-- Precio del libro -->
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a> 
+                        <!-- Enlace para agregar al carrito, ocupa todo el ancho disponible, con datos adicionales -->
+                    </div>
+                </div>
+            </div>
+            <div class="four columns"> <!-- Repetición del bloque anterior para otro libro -->
+                <div class="card">
+                    <img src="img/part2.jpeg" class="imagen-libro u-full-width">
+                    <div class="info-card">
+                        <h4> Juegos del Hambre - En Llamas</h4>
+                        <p>Juegos del Hambre</h4> <!-- Error: esta etiqueta debe ser </p> -->
+                            <p>Suzanne Collins</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$20.000 <span class="u-pull-right ">$15.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns"> <!-- Repetición del bloque anterior para otro libro -->
+                <div class="card">
+                    <img src="img/part3.jpeg" class="imagen-libro u-full-width">
+                    <div class="info-card">
+                        <h4> Juegos del Hambre - El Sinzajo</h4>
+                        <p>Juegos del Hambre</h4> <!-- Error: esta etiqueta debe ser </p> -->
+                            <p>Suzanne Collins</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$20.000 <span class="u-pull-right ">$15.990</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer id="footer" class="footer"> <!-- Pie de página con ID y clase -->
+        <div class="container"> <!-- Contenedor principal -->
+            <div class="row"> <!-- Fila para la disposición de elementos -->
+                <div class="col-12"> <!-- Div que ocupa 12 columnas -->
+                    <p class="copyrigth">Todos los derechos reservados &copy;</p> <!-- Texto de derechos reservados -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+
+</html>
