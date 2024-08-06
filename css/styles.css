@@ -1,95 +1,193 @@
 /* Encabezado */
 header {
-    background: #003366; /* Azul oscuro */
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Barra de navegación */
-  nav {
-    background: linear-gradient(135deg, #1e90ff, #d1d8da); /* Gradiente azul */
-    color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra inicial para efecto flotante */
-    font-size: 1.1em;
-    position: relative;
-    z-index: 10;
-    border-radius: 10px; /* Bordes redondeados */
-  }
-  
-  /* Enlaces de navegación */
-  .navbar-brand, .nav-link {
-    color: #ffffff !important; /* Blanco */
-    transition: color 0.3s ease-in-out;
-  }
-  
-  /* Hover del enlace del menú */
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #00ff00 !important; /* Verde para hover */
-    background: rgba(255, 255, 255, 0.2); /* Fondo en hover opcional */
-  }
-  
-  /* Menú desplegable */
-  .navbar-collapse {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
-  }
-  
-  /* Elementos del menú */
-  .navbar-nav .nav-item {
-    margin: 0 10px;
-  }
-  
-  /* Estilo del enlace del menú */
-  .navbar-nav .nav-item .nav-link {
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Efecto flotante 3D */
-  .navbar {
-    transform: perspective(1000px) translateZ(0); /* Posicionamiento base */
-    transition: box-shadow 0.3s ease; /* Transición de sombra */
-  }
-  
-  .navbar:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para efecto flotante */
-  }
-  
-  /* Contenido principal */
-  main {
-    padding: 20px;
-  }
-  
-  .navegacion {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  
-  .btn-modern {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background: #e74c3c; /* Rojo */
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
+    background: #003366; /* Color de fondo azul oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px; /* Espaciado interno de 20px alrededor del contenido */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Barra de navegación */
+nav {
+    background: linear-gradient(135deg, #1e90ff, #d1d8da); /* Gradiente de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para dar un efecto de elevación */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor al estándar */
+    position: relative; /* Posición relativa para permitir el uso de z-index */
+    z-index: 10; /* Asegura que el nav esté por encima de otros elementos */
+    border-radius: 10px; /* Bordes redondeados para el nav */
+}
+
+/* Enlaces de navegación */
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* Color del texto blanco con alta prioridad */
+    transition: color 0.3s ease-in-out; /* Transición suave del color del texto */
+}
+
+/* Hover del enlace del menú */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00ff00 !important; /* Color verde para el texto en hover */
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semi-transparente en hover */
+}
+
+/* Menú desplegable */
+.navbar-collapse {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada para el menú desplegable */
+}
+
+/* Elementos del menú */
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Espacio horizontal de 10px entre los elementos del menú */
+}
+
+/* Estilo del enlace del menú */
+.navbar-nav .nav-item .nav-link {
+    padding: 10px; /* Espaciado interno de 10px alrededor del enlace */
+    border-radius: 5px; /* Bordes redondeados de 5px para el enlace */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el color de fondo y la sombra */
+}
+
+/* Efecto flotante 3D */
+.navbar {
+    transform: perspective(1000px) translateZ(0); /* Posicionamiento 3D básico para la perspectiva */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+.navbar:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al pasar el cursor para un efecto flotante */
+}
+
+/* Contenido principal */
+main {
+    padding: 20px; /* Espaciado interno de 20px alrededor del contenido principal */
+}
+
+.navegacion {
+    display: flex; /* Usa el modelo de caja flexible para alinear los elementos */
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    padding: 10px; /* Espaciado interno de 10px alrededor de los elementos */
+}
+
+.btn-modern {
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    padding: 10px 20px; /* Espaciado interno de 10px vertical y 20px horizontal */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bold; /* Texto en negrita */
+    color: #fff; /* Color del texto blanco */
+    background: #e74c3c; /* Color de fondo rojo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    text-align: center; /* Alinea el texto al centro */
+    text-decoration: none; /* Sin subrayado en el texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .btn-modern:hover {
-    background: #c0392b; /* Rojo más oscuro */
-    transform: translateY(-3px); /* Elevación al pasar el cursor */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave para la transformación y la sombra */
+}
+
+.btn-modern:hover {
+    background: #c0392b; /* Color de fondo rojo más oscuro en hover */
+    transform: translateY(-3px); /* Eleva el botón al pasar el cursor */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada en hover */
-  }
-  
-  .btn-modern:active {
-    transform: translateY(1px); /* Efecto de presión */
+}
+
+.btn-modern:active {
+    transform: translateY(1px); /* Efecto de presión al hacer clic */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al presionar */
-  }
+}
+
+/* Contenido principal flexible */
+.content {
+    flex: 1; /* Permite que el contenido principal se expanda para ocupar el espacio disponible */
+    /* Aquí puedes agregar estilos para el contenido principal */
+}
+
+/* Pie de página */
+.footer {
+    background: linear-gradient(45deg, #ff6b6b, #556270); /* Gradiente de fondo con colores rojo y gris */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para el pie de página */
+    padding: 20px 0; /* Espaciado interno de 20px vertical */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.footer-content {
+    max-width: 1200px; /* Máxima anchura del contenido del pie de página */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex; /* Usa el modelo de caja flexible */
+    flex-direction: column; /* Dispone los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer-title {
+    font-size: 2rem; /* Tamaño de fuente más grande para el título */
+    margin: 0; /* Sin margen alrededor del título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto sutil para el título */
+}
+
+.footer-text {
+    font-size: 1rem; /* Tamaño de fuente para el texto del pie de página */
+    margin: 5px 0 0; /* Margen superior de 5px, sin margen inferior */
+}
+
+/* Ofertas */
+.ofertas {
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 200px; /* Altura fija para la sección de ofertas */
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: #fff; /* Color del texto blanco */
+    position: relative; /* Posición relativa para permitir el uso de elementos posicionados absolutamente */
+    overflow: hidden; /* Oculta el contenido desbordante */
+}
+
+/* Cada oferta */
+.oferta {
+    background: linear-gradient(45deg, #ff6b6b, #556270); /* Gradiente de fondo con colores rojo y gris */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+    padding: 30px; /* Espaciado interno de 30px */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    margin: 10px; /* Margen de 10px alrededor de cada oferta */
+    flex: 1; /* Permite que cada oferta se expanda para ocupar espacio disponible */
+    max-width: 300px; /* Máxima anchura de 300px para cada oferta */
+    text-align: center; /* Alinea el texto al centro */
+    position: relative; /* Posición relativa para el pseudo-elemento ::after */
+    overflow: hidden; /* Oculta el contenido desbordante */
+    transition: transform 0.3s; /* Transición suave para la transformación */
+}
+
+.oferta:hover {
+    transform: translateY(-10px); /* Eleva la oferta al pasar el cursor */
+}
+
+/* Estilos para los textos dentro de oferta */
+.oferta h3, .oferta p {
+    margin: 0; /* Elimina el margen alrededor de h3 y p */
+}
+
+/* Efecto de superposición para oferta */
+.oferta::after {
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posición absoluta para que cubra la oferta */
+    top: 0; /* Posicionado en la parte superior */
+    left: 0; /* Posicionado a la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semi-transparente */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Sombra de color cian con efecto de brillo */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
+}
+
+/* Animación de deslizamiento */
+@keyframes slide {
+    0% { transform: translateX(100%); } /* Comienza fuera del lado derecho */
+    100% { transform: translateX(-100%); } /* Termina fuera del lado izquierdo */
+}
+
+/* Estilo del texto animado dentro de oferta */
+.oferta h3, .oferta p {
+    white-space: nowrap; /* Evita el salto de línea dentro del texto */
+    overflow: hidden; /* Oculta el contenido desbordante */
+    display: inline-block; /* Hace que el texto se comporte como un bloque en línea */
+    animation: slide 5s linear infinite; /* Aplica la animación de deslizamiento de 5 segundos de forma infinita */
+}
+
   
